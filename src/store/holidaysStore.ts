@@ -1,6 +1,5 @@
 import { create } from 'zustand'
-import { Holiday } from '@/interfaces/holidays';
-// import { holidaysMock } from './holidaysMock';
+import { Holiday } from '../interfaces/holidays';
 
 interface HolidayStore {
   holidays: Holiday[];
@@ -8,6 +7,8 @@ interface HolidayStore {
   updateHoliday: (id: string, updatedHoliday: Holiday) => void;
   deleteHoliday: (id: string) => void;
   setHolidays: (holidays: Holiday[]) => void;
+  holidaySelected: Holiday | object
+  setHolidaySelected: (holiday: Holiday) => void
 }
 
 const useHolidayStore = create<HolidayStore>((set) => ({
@@ -26,6 +27,9 @@ const useHolidayStore = create<HolidayStore>((set) => ({
       set((state) => ({
         holidays: state.holidays.filter((holiday) => holiday.id !== id),
       })),
+    holidaySelected: {},
+    setHolidaySelected: (holiday: Holiday) =>
+      set(() => ({holidaySelected: holiday})),
   })
 )
 

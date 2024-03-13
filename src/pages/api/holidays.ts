@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import useHolidayStore from '@/store/holidaysStore';
-import { Holiday } from '@/interfaces/holidays';
+import useHolidayStore from '../../store/holidaysStore';
+import { Holiday } from '../../interfaces/holidays';
 
 function getHolidays(): Holiday[] {
   return useHolidayStore.getState().holidays;

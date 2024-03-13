@@ -1,9 +1,13 @@
+'use client'
+import { CssBaseline } from '@mui/material'
+
+import Dashboard from '../components/templates/DashBoard'
 
 export default function Home() {
   return (
-    <main>
-      <h1>Holidays Plans!</h1>
-      <p>API: /api/</p>
-    </main>
+    <>
+    <CssBaseline />
+    <Dashboard />
+    </>
   );
 }

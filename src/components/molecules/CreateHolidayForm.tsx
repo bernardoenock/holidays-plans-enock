@@ -46,7 +46,16 @@ export default function CreateHolidayForm() {
   }
 
   return (
-    <Box component='form' onSubmit={handleSubmit}>
+    <Box 
+      component='form' 
+      onSubmit={handleSubmit} 
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        height: '100%'
+      }}
+    >
       <TextField 
         variant='outlined'
         required 

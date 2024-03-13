@@ -28,8 +28,7 @@ The Holiday Plan Management project is an application designed to assist in orga
 - Evaluation Criteria:
   - UI/UX Design and Usability: Evaluation of interface design quality and ease of use.
   - Form Validation and Error Handling: Assessment of client-side form validation effectiveness and error handling.
-  - Testing Approach and Coverage: Evaluation of testing approach and coverage for front-end components and functionalities.
-  Responsive Design and Cross-Browser Compatibility: Assessment of interface responsiveness and compatibility with different browsers.
+  - Responsive Design and Cross-Browser Compatibility: Assessment of interface responsiveness and compatibility with ifferent browsers.
   - Code Quality: Analysis of code quality, organization, and readability.
 
 The project was developed using modern technologies such as React, Next.js, and MUI (Material-UI), ensuring a pleasant user experience and a solid foundation for efficient holiday plan management.

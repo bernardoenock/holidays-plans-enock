@@ -1,9 +1,9 @@
-import { MouseEventHandler, ReactNode } from "react"
-import { ListItemButton, ListItemIcon, ListItemText } from "@mui/material"
+import { MouseEventHandler, ReactNode } from 'react'
+import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 
 type ItemMenuProps = {
-  iconMUI: ReactNode,
-  label: string,
+  iconMUI: ReactNode
+  label: string
   onClick?: MouseEventHandler<HTMLDivElement> | undefined
 }
 
